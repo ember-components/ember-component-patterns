@@ -2,10 +2,10 @@
   "name": "ember-component-patterns",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for ember-component-patterns goes here",
-  "repository": "",
+  "description": "Accessible component patterns for Ember developers",
+  "repository": "https://github.com/ember-components/ember-component-patterns",
   "license": "MIT",
-  "author": "",
+  "author": "Melanie Sumner <melaniersumner@gmail.com",
   "directories": {
     "doc": "doc",
     "test": "tests"
