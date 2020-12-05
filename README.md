@@ -1,7 +1,6 @@
 # ember-component-patterns
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a project to provide accessible component patterns for Ember developers. It is a project to convert https://emberjs-1.gitbook.io/ember-component-patterns/ to an Ember app (for easier contributing), and build on top of that to make this app a best-in-class resource for all aspects of accessible components.
 
 ## Prerequisites
 
@@ -46,7 +45,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+This app will be automatically deployed to Netlify when new branches are merged to the `main` branch.
 
 ## Further Reading / Useful Links
 
