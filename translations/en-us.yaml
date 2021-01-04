@@ -1,0 +1,26 @@
+site_name: Ember Component Patterns
+site_name_technical: ember-component-patterns
+footer:
+  link_repo: GitHub Repository
+index:
+  header_subheadline: This guide intends to be aligned with the idioms and syntax of the Octane edition of Ember.
+  intro_1: The goal of this guide is to cultivate a set of patterns that are practical and can reasonably be used by any Ember developer in their application. It is intended to be made publicly available with the <a href="https://emberjs.com/editions/octane/">preview release of Ember Octane</a>.
+  intro_2: The component patterns here will, at least initially, be without CSS styling. This is to help clearly delineate form and function. "First, make it useful; then make it beautiful" as the saying goes. When necessary to demonstrate the validity of the approach, however, a sub-section on styling may be added to the pattern if it helps to demonstrate what might otherwise be thought of as impossible.
+  intro_3: As this project matures, the <a href="https://en.wikipedia.org/wiki/Anti-pattern">anti-patterns</a> will be explored by adding more prose and explains to demonstrate why other options were not chosen, providing both a well-lit path for success and a knowledge base for the shadows.
+  intro_4: Finally, references are included at the bottom of each page. Some of these are references from which information was gathered for the guide; others are more in-depth reading about a related topic. This supports a more comprehensive deep-dive into the subject matter for the Ember developer, or anyone wishing to gain more thorough knowledge on the specific topic.
+  intro_5: What one can obtain from this collection of patterns depends on the reader; however a few potential types of readers, and possible goals, have been kept in mind.
+  developers:
+      headline: For Developers
+      item_1: write more technically accurate code
+      item_2: worry a little bit less about writing code that is not accessible
+      item_3: have easy-to-reference base requirements for common component patterns
+      item_4: have confidence in the code you produce
+  designers:
+      headline: For Designers
+      item_1: understand what components really need to have from a functional perspective
+      item_2: ensure that designs will include the necessary functionality and accessibility
+      item_3: focus on design within clear technical constraints
+  basandtpms:
+      headline: For BAs and TPMs
+      item_1: reference to help you more accurately know base requirements for the new feature(s) you want to add to your project
+      item_2: confidently plan out projects more accurately by reducing "unknown unknowns"
