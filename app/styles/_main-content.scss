@@ -1,0 +1,35 @@
+main {
+  padding-top: 80px;
+  &.with-sidebar {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+}
+.main-content__header {
+  border-bottom: 2px solid $colorSubtle;
+  margin-bottom: 32px;
+  padding-bottom: 40px;
+}
+.main-content__heading-primary {
+  font-weight: normal;
+  margin: 0 0 .5em 0;
+}
+.main-content__heading-secondary {
+  color: $textColorSubtle;
+  font-size: 16px;
+  font-weight: normal;
+}
+.main-content {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 750px;
+}
+.main-content__primary {
+  border-bottom: 2px solid $colorSubtle;
+  padding-bottom: 40px;
+}
+.main-content__summary {
+  border-bottom: 2px solid $colorSubtle;
+  padding: 32px 0 40px;
+}

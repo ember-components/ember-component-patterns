@@ -1,37 +1,41 @@
-<header>
-  <h1>{{t 'site_name'}}</h1>
-  <h2>{{t 'index.header_subheadline'}}</h2>
-</header>
+<div class="main-content">
+  <section class="main-content__primary">
+    <header class="main-content__header">
+      <h1 class="main-content__heading-primary">{{t 'site_name'}}</h1>
+      <h2 class="main-content__heading-secondary">{{t 'index.header_subheadline'}}</h2>
+    </header>
 
-<p>{{t 'index.intro_1' htmlSafe=true}}</p>
-<p>{{t 'index.intro_2'}}</p>
-<p>{{t 'index.intro_3' htmlSafe=true}}</p>
-<p>{{t 'index.intro_4'}}</p>
-<p>{{t 'index.intro_5'}}</p>
+    <p>{{t 'index.intro_1' htmlSafe=true}}</p>
+    <p>{{t 'index.intro_2'}}</p>
+    <p>{{t 'index.intro_3' htmlSafe=true}}</p>
+    <p>{{t 'index.intro_4'}}</p>
+    <p>{{t 'index.intro_5'}}</p>
+  </section>
 
-<a href='#developers'>
-  <h3 id='developers'>{{t 'index.developers.headline'}}</h3>
-</a>
-<ul>
-  <li>{{t 'index.developers.item_1'}}</li>
-  <li>{{t 'index.developers.item_2'}}</li>
-  <li>{{t 'index.developers.item_3'}}</li>
-  <li>{{t 'index.developers.item_4'}}</li>
-</ul>
+ <section class="main-content__summary">
+    <LinkableHeader @linkTitle='For Developers'/>
+    <ul>
+      <li>{{t 'index.developers.item_1'}}</li>
+      <li>{{t 'index.developers.item_2'}}</li>
+      <li>{{t 'index.developers.item_3'}}</li>
+      <li>{{t 'index.developers.item_4'}}</li>
+    </ul>
+ </section>
 
-<a href='#designers'>
-  <h3 id='designers'>{{t 'index.designers.headline'}}</h3>
-</a>
-<ul>
-  <li>{{t 'index.designers.item_1'}}</li>
-  <li>{{t 'index.designers.item_2'}}</li>
-  <li>{{t 'index.designers.item_3'}}</li>
-</ul>
+  <section class="main-content__summary">
+    <LinkableHeader @linkTitle='For Designers'/>
+    <ul>
+      <li>{{t 'index.designers.item_1'}}</li>
+      <li>{{t 'index.designers.item_2'}}</li>
+      <li>{{t 'index.designers.item_3'}}</li>
+    </ul>
+  </section>
 
-<a href='#basandtpms'>
-  <h3 id='basandtpms'>{{t 'index.basandtpms.headline'}}</h3>
-</a>
-<ul>
-  <li>{{t 'index.basandtpms.item_1'}}</li>
-  <li>{{t 'index.basandtpms.item_2'}}</li>
-</ul>
+  <section class="main-content__summary">
+    <LinkableHeader @linkTitle='For BAs and TPMs'/>
+    <ul>
+      <li>{{t 'index.basandtpms.item_1'}}</li>
+      <li>{{t 'index.basandtpms.item_2'}}</li>
+    </ul>
+  </section>
+</div>
