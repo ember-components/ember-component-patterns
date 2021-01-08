@@ -7,7 +7,7 @@ main {
     grid-template-columns: auto 1fr;
   }
 }
-.main__header {
+.main-content__header {
   border-bottom: 2px solid $colorSubtle;
   margin-bottom: 32px;
   padding-bottom: 40px;
@@ -21,12 +21,16 @@ main {
   font-size: 16px;
   font-weight: normal;
 }
-.main__content {
+.main-content {
   margin: 0 auto;
   width: 95%;
   max-width: 750px;
 }
-.main__summary {
+.main-content__primary {
+  border-bottom: 2px solid $colorSubtle;
+  padding-bottom: 40px;
+}
+.main-content__summary {
   border-bottom: 2px solid $colorSubtle;
   padding: 32px 0 40px;
 }
