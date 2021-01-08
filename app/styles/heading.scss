@@ -1,0 +1,29 @@
+.heading {
+  font-size: 24px;
+  font-family: Content-font, Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgb(36, 42, 49);
+  margin: 73px 0px 24px;
+  display: flex;
+  position: relative;
+  &:hover .heading__link-icon {
+    opacity: 1;
+  }
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+  &__link-icon {
+    opacity: 0;
+    vertical-align: middle;
+    width: .9em;
+    height: .9em;
+    line-height: 1em;
+    padding-left: 4px;
+    transition: opacity 150ms ease 0s;
+    &:hover {
+      color: rgb(56, 132, 255);
+    }
+  }
+}
