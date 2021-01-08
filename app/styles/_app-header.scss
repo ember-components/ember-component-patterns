@@ -1,0 +1,25 @@
+.app-header {
+  background: $bGColorBase;
+  box-shadow: $baseShadow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 16px;
+  position: fixed;
+  height: 80px;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+.app-header__heading {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.app-header__link {
+  color: $textColorBase;
+  &:hover {
+    color: $colorHighlightPrimary;
+    text-decoration: none;
+  }
+}
