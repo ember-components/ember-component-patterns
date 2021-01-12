@@ -45,7 +45,7 @@
     "ember-qunit": "4.6.0",
     "ember-resolver": "8.0.2",
     "ember-source": "3.21.3",
-    "ember-template-lint": "2.14.0",
+    "ember-template-lint": "2.16.0",
     "eslint": "7.13.0",
     "eslint-plugin-ember": "8.14.0",
     "eslint-plugin-node": "11.1.0",
