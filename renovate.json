@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "config:js-app",
+    ":dependencyDashboard",
+    ":maintainLockFilesWeekly",
+    ":semanticCommitsDisabled",
+    ":automergeLinters",
+    ":automergeTesters"
+  ],
+  "python": {
+    "enabled": false
+  },
+  "postUpdateOptions": ["yarnDedupeHighest"],
+  "packageRules": [{
+    "packageNames": ["ember-cli", "ember-data", "ember-source"],
+    "separateMinorPatch": true
+  }]
+}
