@@ -21,6 +21,11 @@ In order to contribute to this repo, please follow the following steps.
 - All new functionality should pass a Lighthouse accessibility audit as a baseline for the PR to be merged.
 - Extended functionality such as accordions, tabs and modals should have expected keyboard behavior as specified by WCAG.
 
+## Template based PRs
+- `.hbs` files should use appropriate, semantic HTML structure for all new content.
+- HTML elements should contain the appropriate attributes for accessibility, such as `alt` text for images and `aria` attributes and roles where neccessary.
+- `.hbs` files must pass the accompanying template lint rules. Run `npm run lint:hbs` from within this repo to check linting locally.
+
 ### Styling PRs
 - This repo utilizes [`ember-cli-sass`](https://cli.emberjs.com/release/advanced-use/stylesheets/#scsssass) and styling based PRs should utilize `scss` partials and existing variables where possible.
 - This repo utilizes the [BEM](http://getbem.com/) CSS class naming convention and styling based PRs should conform to this syntax.
