@@ -6,7 +6,7 @@ export default class extends Controller {
   @tracked navPrimaryIsOpen = false;
 
   @action
-  toggleNavPrimary() {
-    this.navPrimaryIsOpen = !this.navPrimaryIsOpen;
+  toggleNavPrimary(explicitBoolean) {
+    this.navPrimaryIsOpen = explicitBoolean ?? !this.navPrimaryIsOpen;
   }
 }
