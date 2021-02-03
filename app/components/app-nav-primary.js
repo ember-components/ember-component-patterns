@@ -10,8 +10,6 @@ export default class extends Component {
   constructor() {
     super(...arguments);
     this.loadContent();
-    this.handleKeydown = this.handleKeydown.bind(this);
-    document.addEventListener('keydown', this.handleKeydown);
   }
 
   get show() {
@@ -21,16 +19,5 @@ export default class extends Component {
   loadContent() {
     this.contents = this.store.findAll('content');
     this.isLoading = false;
-  }
-
-  handleKeydown({ key }) {
-    if (this.args.navPrimaryIsOpen && key === 'Escape') {
-      this.args.toggleNavPrimary();
-    }
-  }
-
-  /* eslint-disable ember/require-super-in-lifecycle-hooks */ // I am calling super... lol
-  willDestroy() {
-    document.removeEventListener('keydown', this.handleKeydown);
   }
 }
