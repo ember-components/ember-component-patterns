@@ -17,4 +17,14 @@ a {
   &:hover {
     text-decoration: underline;
   }
+  &:focus {
+    background-color: $colorHighlightPrimary;
+    color: $bGColorBase;
+  }
+}
+*:focus {
+  outline-offset: 2px;
+  outline-style: dashed;
+  outline-color: $colorHighlightPrimary;
+  outline-width: 1px;
 }

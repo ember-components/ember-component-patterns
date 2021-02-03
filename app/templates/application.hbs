@@ -1,6 +1,8 @@
 <AppHeader @toggleNavPrimary={{this.toggleNavPrimary}} />
 <main class="with-sidebar">
-  <AppNavPrimary @navPrimaryIsOpen={{this.navPrimaryIsOpen}} />
+  <AppNavPrimary
+    @navPrimaryIsOpen={{this.navPrimaryIsOpen}}
+    @toggleNavPrimary={{this.toggleNavPrimary}} />
   {{outlet}}
   <aside>
   </aside>

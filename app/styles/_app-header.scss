@@ -25,7 +25,23 @@
   }
 }
 .app-header__mobile-nav-toggle {
-  padding: 1rem;
+  background-color: $bGColorBase;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.55rem 0.75rem 0.45rem;
+  transition: color $animationSpeedBase, border-color $animationSpeedBase, box-shadow $animationSpeedBase;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $colorHighlightPrimary;
+    box-shadow: $baseShadow;
+  }
+  &:focus {
+    border: 1px solid $colorHighlightPrimary;
+  }
+  &:active {
+    color: $colorHighlightPrimary;
+  }
 }
 @media only screen and (min-width: $breakpointMobile) {
   .app-header__mobile-nav-toggle {

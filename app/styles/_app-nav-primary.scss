@@ -1,14 +1,15 @@
 .app-nav-primary {
-  background-color: $bGColorDim;
-  box-shadow: $baseShadow;
-  overflow-y: scroll;
-  padding: 1rem;
-  width: 250px;
-  top: 0;
+  background-color: $bGColorBase;
+  border-right: 2px solid $colorSubtle;
   bottom: 0;
+  box-shadow: $baseShadow;
   left: -250px;
+  overflow-y: scroll;
+  padding: 3rem 1rem 1rem;
   position: fixed;
+  top: 0;
   transition: left $animationSpeedBase;
+  width: 250px;
   z-index: 30;
 }
 .app-nav-primary__list {
@@ -19,11 +20,53 @@
 .app-nav-primary--open {
   left: 0;
 }
+.app-nav-primary-open-bgfade {
+  background: rgba($bGColorDim, 0.8);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 25;
+}
+.app-nav-primary__mobile-nav-toggle {
+  background-color: $bGColorBase;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  padding: 0.55rem 0.75rem 0.45rem;
+  position: absolute;
+  right: 0.25rem;
+  top: 0.25rem;
+  transition: color $animationSpeedBase, border-color $animationSpeedBase, box-shadow $animationSpeedBase;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $colorHighlightPrimary;
+    box-shadow: $baseShadow;
+  }
+  &:focus {
+    border: 1px solid $colorHighlightPrimary;
+  }
+  &:active {
+    color: $colorHighlightPrimary;
+  }
+}
+
 @media only screen and (min-width: $breakpointMobile) {
   .app-nav-primary {
-    position: relative;
-    left: auto;
+    background-color: transparent;
     box-shadow: none;
+    border-right: none;
+    left: auto;
+    overflow-y: visible;
+    padding: 1rem;
+    position: relative;
+    z-index: 15;
+  }
+
+  .app-nav-primary-open-bgfade,
+  .app-nav-primary__mobile-nav-toggle {
+    display: none;
   }
 }
 
