@@ -7,6 +7,10 @@ export default class extends Controller {
 
   @action
   toggleNavPrimary(explicitBoolean) {
-    this.navPrimaryIsOpen = explicitBoolean ?? !this.navPrimaryIsOpen;
+    if (typeof explicitBoolean === 'boolean') { // Sometimes this isn't passed and it becomes the event... haha
+      this.navPrimaryIsOpen = explicitBoolean;
+      return;
+    }
+    this.navPrimaryIsOpen = !this.navPrimaryIsOpen;
   }
 }

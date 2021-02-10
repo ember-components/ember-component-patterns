@@ -6,7 +6,9 @@
         onDeactivate=(action @toggleNavPrimary)
       )
     }}>
-    <nav class="app-nav-primary {{if @navPrimaryIsOpen 'app-nav-primary--open'}}">
+    <nav
+      class="app-nav-primary {{if @navPrimaryIsOpen 'app-nav-primary--open'}}"
+      {{click-elsewhere @toggleNavPrimary isEnabled=this.show}}>
       <button
         class="app-nav-primary__mobile-nav-toggle"
         aria-label="Hide Site Navigation"
@@ -34,11 +36,7 @@
     </nav>
 
     {{#if @navPrimaryIsOpen}}
-      <div
-        role="button"
-        class="app-nav-primary-open-bgfade"
-        {{on "click" @toggleNavPrimary}}
-      ></div>
+      <div class="app-nav-primary-open-bgfade"></div>
     {{/if}}
   </div>
 {{/if}}
