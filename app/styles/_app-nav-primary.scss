@@ -3,12 +3,11 @@
   border-right: 2px solid $colorSubtle;
   bottom: 0;
   box-shadow: $baseShadow;
-  left: -250px;
+  transform: translate-x(-250px);
   overflow-y: scroll;
   padding: 3rem 1rem 1rem;
   position: fixed;
   top: 0;
-  transition: left $animationSpeedBase;
   width: 250px;
   z-index: 30;
 }
@@ -18,7 +17,7 @@
   padding: 0;
 }
 .app-nav-primary--open {
-  left: 0;
+  transform: translate-x(0);
 }
 .app-nav-primary-open-bgfade {
   background: rgba($bGColorDim, 0.8);
