@@ -7,4 +7,5 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('content', { path: '/content/:content_id' });
 });
