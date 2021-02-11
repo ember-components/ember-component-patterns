@@ -71,5 +71,8 @@
   .app-nav-primary__mobile-nav-toggle {
     display: none;
   }
+  .app-nav-primary__wrapper::before  {
+    display: none;
+  }
 }
 
