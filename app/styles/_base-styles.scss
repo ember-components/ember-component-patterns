@@ -1,25 +1,15 @@
 body {
   color: $textColorBase;
+  background-color: $bGColorDim;
   display: flex;
   flex-direction: column;
   font-family: $baseFont;
   font-size: 15px;
   font-weight: 400;
   margin: 0;
-  padding: 0;
   min-height: 100vh;
   padding: 1rem 0;
   -moz-osx-font-smoothing: grayscale;
-  header {
-    margin-top: 0;
-  }
-  main {
-    margin-bottom: auto;
-    margin-top: auto;
-  }
-  footer {
-    margin-bottom: 0;
-  }
 }
 a {
   color: $colorHighlightPrimary;
@@ -27,4 +17,14 @@ a {
   &:hover {
     text-decoration: underline;
   }
+  &:focus {
+    background-color: $colorHighlightPrimary;
+    color: $bGColorBase;
+  }
+}
+*:focus {
+  outline-offset: 2px;
+  outline-style: dashed;
+  outline-color: $colorHighlightPrimary;
+  outline-width: 1px;
 }

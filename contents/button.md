@@ -6,6 +6,6 @@ title: Buttons
 
 ## Part One: Considering Markup
 
-## Part Two: Creating the Ember Component  
+## Part Two: Creating the Ember Component
 
 ## References

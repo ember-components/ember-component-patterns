@@ -1,5 +1,5 @@
 main {
-  padding-top: 80px;
+  padding-top: 60px;
   &.with-sidebar {
     overflow: hidden;
     display: grid;
@@ -21,6 +21,11 @@ main {
   font-weight: normal;
 }
 .main-content {
+  box-shadow: $bGColorBase;
+  background: white;
+  border-left: 2px solid $colorSubtle;
+  border-right: 2px solid $colorSubtle;
+  padding: 1rem;
   margin: 0 auto;
   width: 95%;
   max-width: 750px;

@@ -1,5 +1,8 @@
-<AppHeader />
+<AppHeader @openNavPrimary={{action this.openNavPrimary}} />
 <main class="with-sidebar">
+  <AppNavPrimary
+    @navPrimaryIsOpen={{this.navPrimaryIsOpen}}
+    @close={{action this.closeNavPrimary}} />
   {{outlet}}
   <aside>
   </aside>
