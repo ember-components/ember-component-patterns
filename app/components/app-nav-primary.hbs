@@ -1,5 +1,5 @@
 {{#if this.show}}
-  <div
+  <div class="app-nav-primary__wrapper"
     {{focus-trap
       isActive=(media 'isMobile')
       focusTrapOptions=(hash
@@ -34,9 +34,5 @@
         {{/unless}}
       </ul>
     </nav>
-
-    {{#if @navPrimaryIsOpen}}
-      <div class="app-nav-primary-open-bgfade"></div>
-    {{/if}}
   </div>
 {{/if}}

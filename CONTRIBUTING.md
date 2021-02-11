@@ -7,7 +7,6 @@ Contributions of all types are welcome. Whether filing issues, testing component
 ## Getting started
 
 In order to contribute to this repo, please follow the following steps.
-1. Install [`ember-cli`](https://cli.emberjs.com/release/) globally.
 1. Clone this repo.
 1. `cd ember-component-patterns` and `npm install` dependencies.
 1. Run `ember s` from within the repo to serve the project locally.
