@@ -1,5 +1,8 @@
 site_name: Ember Component Patterns
 site_name_technical: ember-component-patterns
+navigation:
+  open: Show Site Navigation 
+  close: Hide Site Navigation 
 footer:
   link_repo: GitHub Repository
 index:

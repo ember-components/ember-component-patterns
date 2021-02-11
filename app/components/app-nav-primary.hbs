@@ -3,15 +3,16 @@
     {{focus-trap
       isActive=(media 'isMobile')
       focusTrapOptions=(hash
-        onDeactivate=(action @close)
+        onDeactivate=(fn @close)
       )
     }}>
     <nav
-      class="app-nav-primary {{if @navPrimaryIsOpen 'app-nav-primary--open'}}"
+      class="app-nav-primary {{if this.show 'app-nav-primary--open'}}"
       {{click-elsewhere @close isEnabled=this.show}}>
       <button
+        type="button"
         class="app-nav-primary__mobile-nav-toggle"
-        aria-label="Hide Site Navigation"
+        aria-label={{t 'navigation.close'}}
         {{on "click" @close}}>
         <svg role="image" aria-hidden="true" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="currentColor">
           <g>
@@ -25,7 +26,7 @@
       <em>TODO: Make into real links...</em>
 
       <ul class="app-nav-primary__list">
-        {{#unless isLoading}}
+        {{#unless this.isLoading}}
           {{#each this.contents as | content |}}
             <li> {{!-- Convert to LinkTo's when we have content page routing done --}}
               {{content.title}}
