@@ -7,9 +7,4 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('forms', function() {});
-  this.route('navigation', function() {});
-  this.route('messaging', function() {});
-  this.route('faq');
-  this.route('global-components', function() {});
 });
