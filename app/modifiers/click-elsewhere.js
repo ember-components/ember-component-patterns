@@ -10,6 +10,8 @@ export default modifier((element, [callback], options = { isEnabled: true }) => 
   }, 0); // Wait for the next Javascript Run Loop
 
   return () => {
-    document.removeEventListener('click', handleClick);
+    setTimeout(() => {
+      document.removeEventListener('click', handleClick);
+    }, 0); // Wait for the next Javascript Run Loop
   };
 });
