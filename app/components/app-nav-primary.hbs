@@ -23,13 +23,15 @@
         </svg>
       </button>
 
-      <em>TODO: Make into real links...</em>
-
       <ul class="app-nav-primary__list">
         {{#unless this.isLoading}}
           {{#each this.contents as | content |}}
-            <li> {{!-- Convert to LinkTo's when we have content page routing done --}}
-              {{content.title}}
+            <li>
+              <LinkTo
+                @route='content'
+                @model={{content.id}}>
+                {{content.title}}
+              </LinkTo>
             </li>
           {{/each}}
         {{/unless}}
