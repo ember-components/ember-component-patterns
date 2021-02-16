@@ -14,8 +14,15 @@
   z-index: 20;
 }
 .app-header__heading {
+  display: flex;
+  align-items: center;
   font-weight: normal;
   margin-bottom: 0;
+}
+.app-header__logo {
+  width: 40px;
+  margin-right: .5em;
+  border-radius: 5px;
 }
 .app-header__link {
   color: $textColorBase;
