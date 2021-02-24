@@ -1,8 +1,8 @@
-<AppHeader @openNavPrimary={{action this.openNavPrimary}} />
+<AppHeader @openNavPrimary={{this.openNavPrimary}} />
 <main class="with-sidebar">
   <AppNavPrimary
     @navPrimaryIsOpen={{this.navPrimaryIsOpen}}
-    @close={{action this.closeNavPrimary}} />
+    @close={{this.closeNavPrimary}} />
   {{outlet}}
   <aside>
   </aside>
