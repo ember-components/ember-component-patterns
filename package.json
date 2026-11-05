@@ -23,7 +23,7 @@
     "@ember/optional-features": "2.0.0",
     "@glimmer/component": "1.0.3",
     "@glimmer/tracking": "1.0.3",
-    "babel-eslint": "10.1.0",
+    "@babel/eslint-parser": "7.11.0",
     "broccoli-asset-rev": "3.0.0",
     "broccoli-merge-trees": "^4.2.0",
     "broccoli-static-site-json": "4.2.1",
